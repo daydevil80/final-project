@@ -1,0 +1,88 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    padding: 50px;
+    background-color: #ada5a5;
+    color: #333;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1, h2 {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    background-color: #2f3133;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  input, select {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  #tasks {
+    margin-top: 10px;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background: #645858;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .task.completed {
+    text-decoration: line-through;
+    background-color: #d4edda;
+  }
+  
+  .low { border-left: 5px solid green; }
+  .medium { border-left: 5px solid orange; }
+  .high { border-left: 5px solid red; }
+  
+  /* Pomodoro Timer */
+  #pomodoro {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #timer-display {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

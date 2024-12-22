@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Advanced Todo App</h1>
+    </header>
+
+    <section>
+      <h2>Add Task</h2>
+      <form id="task-form">
+        <input id="task-name" type="text" placeholder="Task Name" required>
+        <input id="task-date" type="date" required>
+        <select id="task-priority">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Tasks</h2>
+      <input id="search" type="text" placeholder="Search Tasks...">
+      <div id="tasks"></div>
+    </section>
+
+    <section id="pomodoro">
+      <h2>Pomodoro Timer</h2>
+      <div id="timer-display">25:00</div>
+      <button id="start-timer">Start Focus Timer</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
